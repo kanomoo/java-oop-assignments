@@ -89,6 +89,33 @@ java -cp bin Ass2.Ass2_01
 
 If the code uses packages, use the package-qualified class name in the `java` command.
 
+Quick demo (runnable example)
+-----------------------------
+
+An example `Main` demonstrating basic OOP is provided at `src/example/Main.java` (package `example`). To compile and run this demo:
+
+Unix / WSL / Git Bash:
+
+```bash
+javac -d bin src/example/Main.java
+java -cp bin example.Main
+```
+
+Windows (cmd / PowerShell):
+
+```powershell
+javac -d bin src\example\Main.java
+java -cp bin example.Main
+```
+
+Expected output:
+
+```
+Hi, I'm Alice, age 30.
+Hi, I'm student CS101.
+Student ID: CS101
+```
+
 Project layout
 --------------
 
@@ -124,20 +151,4 @@ There are no automated tests in this repository by default. To add tests:
 
 - Add JUnit to your build (or use a build tool like Maven/Gradle)
 - Place tests under `test/` and run them with your chosen test runner
-
-License
--------
-
-Add a `LICENSE` file to declare the project license (for example, MIT). If you want, I can create a `LICENSE` file for you.
-
-Contact / Need help?
---------------------
-
-If you'd like, I can:
-
-- Add a `LICENSE` (MIT template)
-- Populate the repository metadata (description, website, topics) for GitHub
-- Create a small example project with a runnable `Main` and README demo
-
-บอกผมว่าต้องการให้ผมทำอะไรต่อ: สร้างไฟล์ `LICENSE`, ตั้งค่า metadata บน GitHub หรือเพิ่มตัวอย่างที่รันได้
 
